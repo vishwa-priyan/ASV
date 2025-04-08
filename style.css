@@ -107,9 +107,9 @@ header{
     font-size: 2.3em;
 }
 .heading{
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 1.5% 0;
-    font-family: "Playwrite CU", cursive;
+    /*font-family: "Playwrite CU", cursive;*/
 }
 .main_btn{
     display: flex;
@@ -191,30 +191,39 @@ header{
     border-radius: 10px;
 }
 /* __________about */
-/*.about_heading{
+.about_heading{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 6em;
     align-items: center;
-}*/
+}
 .about .heading_1,
 .about .heading{
     grid-column: 1;
 }
 .about .para{
     grid-column: 2;
-    text-align: right;
+    /*text-align: right;*/
     color: #777;
 }
+
 .about_box{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2em;
     margin-top: 5%;
 }
 .para1{
-    color: #888;
+    color: #505050;
     padding-bottom: 5%;
+}
+.about_box h3{
+    color: black;
+    font-weight: bold;
+}
+.about_box li{
+    margin-left: 15px;
+    color: #505050;
 }
 .box1{
     background-color: #ffeedc;
@@ -224,15 +233,14 @@ header{
 .box1 img{
     width: 100%;
 }
+
 .box1_text{
     padding: 4%;
 }
 .box1_text button:hover{
     color: #000;
 }
-#box2{
-    height: 750px;
-}
+
 /* _______contact */
 .contact{
     margin-top: 6%;
@@ -258,17 +266,18 @@ header{
 }
 /* __________footer */
 .footer_container{
-    display: grid;
+    text-align: center;
+    /*display: grid;
     gap: 4rem 2rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);*/
 }
 .footer_logo img{
     max-width: 100px;
     border-radius: 10px;
 }
 .footer_logo span{
-    display: flex;
-    font-size: 1.8rem;
+    /*display: flex;*/
+    font-size: 1rem;
     font-weight: 800;
 }
 .footer_col .footer_text{
@@ -292,7 +301,7 @@ header{
 }
 .footer_col h4{
     margin-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .footer_links{
