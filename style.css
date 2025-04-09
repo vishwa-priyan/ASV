@@ -8,7 +8,8 @@
     text-transform: capitalize;
 }
 body{
-    background-color: #1A1110;
+    /*background-color: #1A1110;*/
+    background: linear-gradient(to right, rgb(33, 16, 48), rgb(14, 3, 14));
     font-family: "Lato", sans-serif;
 }
 header{
@@ -29,6 +30,57 @@ header{
     align-items: center;
 }
 
+  /* Overlay background */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  /* Popup box */
+  .popup {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup h2,.pp, .popup-list{
+    margin-top: 0;
+    color: black;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 18px;
+  }
+  
+  .close-btn:hover {
+    background: #333;
+  }
+  
 
 .logo img{
     width: 100px;
@@ -49,6 +101,8 @@ header{
 .navbar.scrolled{
     background-color: #000;
     box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+    border-bottom: 1px solid white;
+    border-radius: 0 0 10px 10px;
 }
 .nav_items{
     display: flex;
@@ -150,9 +204,9 @@ header{
     font-family: 'lato', sans-serif;
 }
 .head .heading_1{
-    font-family: 'playwrite CU', cursive;
+    /*font-family: 'playwrite CU', cursive;*/
     color: aliceblue;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 .boxes{
     margin-top: 4rem;
@@ -167,10 +221,15 @@ header{
     align-items: center;
     text-align: center;
     padding: 5% 0;
+    background-color: black;
     box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
     border: 2px solid transparent;
+    border-radius: 5px;
 }
 .box img{
+    width: 250px;
+}
+.overlay .popup-img{
     width: 250px;
 }
 .box p{
@@ -214,21 +273,22 @@ header{
     margin-top: 5%;
 }
 .para1{
-    color: #505050;
+    color: #ffffffc4;
     padding-bottom: 5%;
 }
 .about_box h3{
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .about_box li{
     margin-left: 15px;
-    color: #505050;
+    color: #ffffffc4;
 }
 .box1{
-    background-color: #ffeedc;
+    background-color: #000000a1;
     box-shadow: rgba(0,0,0,2.24) 0 3px 8px;
-    border: 5px solid chocolate;
+    border-radius: 10px;
+    border: 1.6px solid white;
 }
 .box1 img{
     width: 100%;
@@ -408,7 +468,7 @@ header{
     padding: 2rem 2rem;
 }
 .heading {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .heading_1 {
     font-size: 2em;
